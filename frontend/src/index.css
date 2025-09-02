@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  --color-prim: #e8d9f4;
+  --color-iron: #f2f3f5;
+  --color-blush: #fdeef5;
+  --color-grey: #98979c;
+  --color-rose: #f7cdd0;
+}
+
+@font-face {
+  font-family: "Vividly";
+  src: url("./assets/fonts/Vividly-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Boldyguard";
+  src: url("./assets/fonts/Boldyguard Demo.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dunkin";
+  src: url("./assets/fonts/Dunkin Sans.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lovera";
+  src: url("./assets/fonts/Lovera Personal Use Only.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.5s ease-out forwards;
+}
+
+.animate-slide-out {
+  animation: slide-out 0.5s ease-out forwards;
+}
